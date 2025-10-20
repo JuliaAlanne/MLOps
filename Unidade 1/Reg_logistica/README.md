@@ -32,8 +32,13 @@ Foram utilizados três datasets com diferentes características de separabilidad
 **Observações sobre Convergência (Baseado nos Gráficos de Perda):**
 
 * **Dataset 1:** A perda (Loss) atingiu o valor mais baixo e convergiu rapidamente, refletindo a natureza linearmente separável dos dados e a adequação do modelo.
+![Gráficos de Perda do Dataset 1](img/loss_01.png)
+
 * **Dataset 2 (Circles):** A perda se manteve alta e a convergência foi lenta/inexistente. Isso demonstra a ineficácia de um modelo linear (Regressão Logística) para separar um dataset de círculos concêntricos.
+![Gráficos de Perda do Dataset 2](img/loss_02.png)
+
 * **Dataset 3 (Moons):** A perda diminuiu significativamente e estabilizou em um valor baixo/médio. Embora o dataset seja não-linear, o modelo consegue traçar uma fronteira linear que otimiza a separação global, resultando em boa performance.
+![Gráficos de Perda do Dataset 3](img/loss_03.png)
 
 **Discussão sobre Trade-off:**
 **A diferença de performance entre o Dataset 1 e os Datasets 2 (circles) ou 3 (moons) revela que a Regressão Logística (modelo linear) é inadequada para dados cuja separação exige uma fronteira curva ou complexa. O baixo desempenho no Dataset 2 (circles), por exemplo, demonstra claramente que a fronteira de decisão linear não consegue generalizar a relação não-linear entre as classes.**
@@ -56,7 +61,7 @@ As métricas foram calculadas no conjunto de validação (`X_val`).
 
 **Matrizes de Confusão (Screenshots/Plots)**
 
-![Plot das Matrizes de Confusão para cada Dataset](caminho/para/seus/plots_matriz_confusao.png)
+![Plot das Matrizes de Confusão para cada Dataset](img/plots_matriz_confusao.png)
 
 **[PREENCHER - Adicione um plot ou screenshot da matriz de confusão. Ex: O Dataset 1, embora linear, resultou em uma matriz ruim (previsões invertidas), o que sugere que o threshold `0.5` ou a normalização/escala do `make_classification` pode ter invertido as classes 0 e 1, ou o modelo não convergiu para o lado correto da fronteira. É importante mencionar se o resultado de 5% de acurácia no Dataset 1 é esperado ou se indica um problema (e explicar se o problema é o threshold).]**
 
