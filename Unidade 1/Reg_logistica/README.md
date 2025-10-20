@@ -1,4 +1,4 @@
-# Desafio de Classificação Binária com PyTorch (Bônus - Unidade 1)
+# Desafio de Classificação Binária com PyTorch 
 
 ## 📌 Descrição do Projeto
 
@@ -31,13 +31,18 @@ Foram utilizados três datasets com diferentes características de separabilidad
 
 **Observações sobre Convergência (Baseado nos Gráficos de Perda):**
 
-* **[PREENCHER - Analisar os gráficos de perda (`fig1`, `fig2`, `fig3`)]**
 * **Dataset 1:** A perda (Loss) atingiu o valor mais baixo e convergiu rapidamente, refletindo a natureza linearmente separável dos dados e a adequação do modelo.
 * **Dataset 2 (Circles):** A perda se manteve alta e a convergência foi lenta/inexistente. Isso demonstra a ineficácia de um modelo linear (Regressão Logística) para separar um dataset de círculos concêntricos.
 * **Dataset 3 (Moons):** A perda diminuiu significativamente e estabilizou em um valor baixo/médio. Embora o dataset seja não-linear, o modelo consegue traçar uma fronteira linear que otimiza a separação global, resultando em boa performance.
 
 **Discussão sobre Trade-off:**
-**[PREENCHER - Discuta o que a diferença de performance entre o Dataset 1 e o Dataset 2 (circles) ou Dataset 3 (moons) revela sobre a Regressão Logística (modelo linear) e dados não-lineares/ruidosos. Ex: O modelo linear tem dificuldade em generalizar quando a separabilidade não é uma linha reta, como visto nos `circles`.]**
+**A diferença de performance entre o Dataset 1 e os Datasets 2 (circles) ou 3 (moons) revela que a Regressão Logística (modelo linear) é inadequada para dados cuja separação exige uma fronteira curva ou complexa. O baixo desempenho no Dataset 2 (circles), por exemplo, demonstra claramente que a fronteira de decisão linear não consegue generalizar a relação não-linear entre as classes.**
+
+*Regressão Logística modela a probabilidade usando uma combinação linear das características, resultando em uma fronteira de decisão sempre reta (uma hiperpélace no espaço de características).
+
+*Dataset 2 (make_circles): A fronteira de decisão ideal é um círculo (não-linear). Como o modelo linear não consegue traçar essa curva, ele tenta traçar a melhor linha reta possível, o que resulta em uma acurácia próxima de 50% (aleatória), evidenciando a limitação do modelo.
+
+*Dataset 3 (make_moons): Embora seja não-linear, o baixo ruído (noise=0.1) permitiu que o modelo encontrasse uma linha reta que, por sorte, separa bem uma parte significativa das classes, resultando em um desempenho surpreendentemente bom (~91.7% de acurácia).
 
 ### 2. Matrizes de Confusão e Métricas de Desempenho
 
