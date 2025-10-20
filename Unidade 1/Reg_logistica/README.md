@@ -37,13 +37,13 @@ Foram utilizados três datasets com diferentes características de separabilidad
 **Observações sobre Convergência (Baseado nos Gráficos de Perda):**
 
 * **Dataset 1:** A perda (Loss) atingiu o valor mais baixo e convergiu rapidamente, refletindo a natureza linearmente separável dos dados e a adequação do modelo.
-![Gráficos de Perda do Dataset 1](img/loss_dataset_01.png)
+[Gráficos de Perda do Dataset 1](img/loss_dataset_01.png)
 
 * **Dataset 2 (Circles):** A perda se manteve alta e a convergência foi lenta/inexistente. Isso demonstra a ineficácia de um modelo linear (Regressão Logística) para separar um dataset de círculos concêntricos.
-![Gráficos de Perda do Dataset 2](img/loss_dataset_02.png)
+[Gráficos de Perda do Dataset 2](img/loss_dataset_02.png)
 
 * **Dataset 3 (Moons):** A perda diminuiu significativamente e estabilizou em um valor baixo/médio. Embora o dataset seja não-linear, o modelo consegue traçar uma fronteira linear que otimiza a separação global, resultando em boa performance.
-![Gráficos de Perda do Dataset 3](img/loss_dataset_03.png)
+[Gráficos de Perda do Dataset 3](img/loss_dataset_03.png)
 
 **Discussão sobre Trade-off:**
 **A diferença de performance entre o Dataset 1 e os Datasets 2 (circles) ou 3 (moons) revela que a Regressão Logística (modelo linear) é inadequada para dados cuja separação exige uma fronteira curva ou complexa. O baixo desempenho no Dataset 2 (circles), por exemplo, demonstra claramente que a fronteira de decisão linear não consegue generalizar a relação não-linear entre as classes.**
