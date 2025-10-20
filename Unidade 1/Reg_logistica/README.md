@@ -81,17 +81,6 @@ As métricas foram calculadas no conjunto de validação (`X_val`).
     * Valores de *logits* muito extremos podem fazer com que a `Sigmoid` produza valores exatamente $0$ ou $1$. Quando o $\log$ (logaritmo) é aplicado a um valor muito próximo de $0$ (parte do cálculo do BCE), o resultado pode se tornar $\pm\infty$ ou `NaN` (Not a Number), desestabilizando o treinamento.
     * `nn.BCEWithLogitsLoss()` supera isso usando um método mais estável (*log-sum-exp trick*), garantindo cálculos precisos mesmo com *logits* extremos.
 
----
-
-## 🎨 Visualização da Fronteira de Decisão
-
-**[OBSERVAÇÃO: Esta seção está ausente no notebook. Você deve gerar e incluir plots da fronteira de decisão aqui para cada um dos 3 datasets, comparando a fronteira de um dataset de baixo ruído (Dataset 1) com um de alto ruído (Dataset 2, Circles).]**
-
-![Fronteira de Decisão - Dataset 1 (Baixo Ruído)](caminho/para/plot_db_dataset1.png)
-*Interpretação:* **[PREENCHER - Descrever o quão bem a fronteira linear separa o Dataset 1 (deve ser quase perfeita).]**
-
-![Fronteira de Decisão - Dataset 2 (Alto Ruído/Não-linear)](caminho/para/plot_db_dataset2.png)
-*Interpretação:* **[PREENCHER - Descrever por que a fronteira é inadequada para o Dataset 2 (é uma linha reta que falha em separar círculos concêntricos).]**
 
 ---
 
