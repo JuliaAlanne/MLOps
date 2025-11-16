@@ -61,12 +61,12 @@ Isto permitiu:
 
 ---
 
-## 📊 Resultados e Análise (Exemplo de Preenchimento)
+## 📊 Resultados e Análise 
 
 
 ### 1. Curvas de Perda (Loss)
 
-O modelo foi treinado por 10 épocas, alcançando uma acurácia de validação de aproximadamente **82.20%**.
+O modelo foi treinado por 10 épocas, alcançando uma acurácia de validação de aproximadamente **84.32%**.
 
 
 
