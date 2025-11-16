@@ -8,11 +8,11 @@ A atividade principal é utilizar *PyTorch Hooks* para capturar e visualizar as 
 
 ## 🎯 Objetivo da Atividade
 
-1.  [cite_start]**Adaptação de Dados:** Configurar o carregamento e pré-processamento do dataset **Fashion-MNIST** (10 classes, imagens $28\times28$).
-2.  [cite_start]**Construção da Arquitetura:** Implementar uma CNN de bloco único (similar à LeNet-like), ajustando as dimensões de entrada e saída para o Fashion-MNIST.
-3.  [cite_start]**Treinamento e Métricas:** Treinar o modelo usando o **Cross-Entropy Loss** e registrar as métricas de perda e acurácia (treino/validação).
-4.  [cite_start]**Inspeção da Rede (Hooks):** Utilizar *PyTorch Hooks* para interceptar e capturar os tensores de saída (ativações) de cada camada da CNN.
-5.  [cite_start]**Visualização:** Gerar plots dos **filtros aprendidos** e dos **feature maps** intermediários.
+1.  **Adaptação de Dados:** Configurar o carregamento e pré-processamento do dataset **Fashion-MNIST** (10 classes, imagens $28\times28$).
+2.  **Construção da Arquitetura:** Implementar uma CNN de bloco único (similar à LeNet-like), ajustando as dimensões de entrada e saída para o Fashion-MNIST.
+3.  **Treinamento e Métricas:** Treinar o modelo usando o **Cross-Entropy Loss** e registrar as métricas de perda e acurácia (treino/validação).
+4.  **Inspeção da Rede (Hooks):** Utilizar *PyTorch Hooks* para interceptar e capturar os tensores de saída (ativações) de cada camada da CNN.
+5.  **Visualização:** Gerar plots dos **filtros aprendidos** e dos **feature maps** intermediários.
 
 ---
 
