@@ -66,11 +66,12 @@ Isto permitiu:
 
 ### 1. Curvas de Perda (Loss)
 
-O modelo foi treinado por 30 épocas, alcançando uma acurácia de validação de aproximadamente **84.32%**.
+O modelo foi treinado por 30 épocas, alcançando uma acurácia de validação de aproximadamente **80%**.
 
 
 > **Análise da Convergência:**
 > As curvas de perda de treino e validação diminuíram rapidamente nas primeiras 5 épocas, convergindo para um platô em torno de 0.5. A perda de validação acompanhou de perto a perda de treino, indicando que o modelo generalizou bem e não apresentou *overfitting* significativo. A baixa complexidade do modelo (poucos filtros) pode ter limitado a acurácia máxima, mas garantiu uma convergência estável.
+> ![img/loss.png]
 
 ### 2. Análise dos Feature Maps
 
