@@ -48,7 +48,7 @@ A arquitetura foi ajustada para aceitar o input $1\times28\times28$ do Fashion-M
 
 ### 1. `Architecture` Class
 
-A classe `Architecture` (no `CNN_FashionMNIST.ipynb`) foi mantida quase idêntica à fornecida, com pequenos ajustes de compatibilidade.
+A classe `Architecture` (no `CNN_FashionMNIST_.ipynb`) foi mantida quase idêntica à fornecida, com pequenos ajustes de compatibilidade.
 
 ### 2. Uso de Hooks
 
