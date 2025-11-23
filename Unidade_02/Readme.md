@@ -1,8 +1,16 @@
+
 ## Análise e Visualização de CNNs com Fashion-MNIST
+
 
 Este projeto  foca na **construção, treinamento e análise detalhada** de uma Rede Neural Convolucional (CNN) adaptada da arquitetura LeNet-like  para a classificação de imagens do dataset **Fashion-MNIST**.
 
 A atividade principal é utilizar *PyTorch Hooks* para capturar e visualizar as ativações internas (feature maps) das camadas da rede, entendendo como o modelo extrai características visuais para realizar a classificação multiclasse.
+
+---
+
+## 👥 Alunos
+- **JULIA ALANNE SILVINO DOS SANTOS**
+- **PABLO DURKHEIM FERNANDES DO NASCIMENTO**
 
 ---
 
@@ -70,8 +78,7 @@ O modelo foi treinado por 30 épocas, alcançando uma acurácia de validação d
 
 
 > **Análise da Convergência:**
-> As curvas de perda de treino e validação diminuíram rapidamente nas primeiras 5 épocas, convergindo para um platô em torno de 0.5. A perda de validação acompanhou de perto a perda de treino, indicando que o modelo generalizou bem e não apresentou *overfitting* significativo. A baixa complexidade do modelo (poucos filtros) pode ter limitado a acurácia máxima, mas garantiu uma convergência estável.
-> 
+> As curvas de perda de treino e validação diminuíram rapidamente nas primeiras 10 épocas. A perda de validação acompanhou de perto a perda de treino, indicando que o modelo generalizou bem e não apresentou *overfitting* significativo. A baixa complexidade do modelo (poucos filtros) pode ter limitado a acurácia máxima, mas garantiu uma convergência estável.
 
 ![](img/loss.png)]
 ![](img/accuracy.png)]
@@ -79,9 +86,8 @@ O modelo foi treinado por 30 épocas, alcançando uma acurácia de validação d
 
 ### 2. Análise dos Feature Maps
 
-
 > **Interpretação Visual:**
-> O **Filtro #0 da camada `conv1`** parece ter aprendido a detectar bordas verticais ou padrões angulares (como é comum em filtros de baixo nível). O **Feature Map após `conv1`** mostra essas bordas ativadas. Após a **`relu1`**, todos os valores negativos foram zerados, resultando em ativações mais esparsas e um mapa mais escuro. Finalmente, a camada **`maxp1`** reduziu o tamanho do *feature map* (de $24\times24$ para $12\times12$), preservando as ativações mais fortes, o que é visível pela semelhança do padrão no mapa reduzido.
+> O filtro de **`conv1`** (Kernel $5\times5$) extraiu **características de baixo nível**, como bordas e grandes contrastes. A camada **`relu1`** aplicou o filtro de não-linearidade, zerando os valores negativos e tornando as ativações mais esparsas (visualmente mais escuras com picos brilhantes). O **`maxp1`** reduziu a dimensionalidade do mapa de $24\times24$ para $12\times12$, preservando as informações mais relevantes (o valor máximo em cada região).
 
 ![](img/features_maps.png)]
 
