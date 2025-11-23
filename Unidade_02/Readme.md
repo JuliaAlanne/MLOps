@@ -91,6 +91,7 @@ O modelo foi treinado por 30 épocas, alcançando uma acurácia de validação d
 
 ![](img/features_maps.png)
 
+![](img/out.png)
 
 ---
 
