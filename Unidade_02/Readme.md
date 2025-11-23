@@ -92,6 +92,6 @@ O modelo foi treinado por 30 épocas, alcançando uma acurácia de validação d
 
 O vídeo a seguir demonstra o processo de desenvolvimento e detalha a análise visual das ativações da rede:
 
-![Vídeo]([https://youtu.be/1A-jYQ8Nq3U)
+[Vídeo](https://youtu.be/1A-jYQ8Nq3U)
 
 `
