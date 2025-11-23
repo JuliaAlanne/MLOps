@@ -89,7 +89,7 @@ O modelo foi treinado por 30 épocas, alcançando uma acurácia de validação d
 > **Interpretação Visual:**
 > O filtro de **`conv1`** (Kernel $5\times5$) extraiu **características de baixo nível**, como bordas e grandes contrastes. A camada **`relu1`** aplicou o filtro de não-linearidade, zerando os valores negativos e tornando as ativações mais esparsas (visualmente mais escuras com picos brilhantes). O **`maxp1`** reduziu a dimensionalidade do mapa de $24\times24$ para $12\times12$, preservando as informações mais relevantes (o valor máximo em cada região).
 
-![](img/features_maps.png)]
+![](img/features_maps.png)
 
 
 ---
