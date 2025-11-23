@@ -47,7 +47,6 @@ A arquitetura foi ajustada para aceitar o input $1\times28\times28$ do Fashion-M
 
 * **Dataset:** Fashion-MNIST
 * **Total de Classes:** 10
-* **Total de Parâmetros Treináveis:** 1910 (baixa complexidade, ideal para análise)
 * **Função de Perda:** `nn.CrossEntropyLoss` (usando SGD) 
 
 ---
