@@ -27,11 +27,11 @@ A arquitetura foi ajustada para aceitar o input $1\times28\times28$ do Fashion-M
 | Camada (Module) | Tipo | Parâmetros Chave | Saída (Output Shape) | Função Principal |
 | :--- | :--- | :--- | :--- | :--- |
 | **Input** | Imagem | $1\times28\times28$ | $1\times28\times28$ | Imagem normalizada |
-| `conv1` | `nn.Conv2d` | `kernel_size=3` | $1\times26\times26$ | Extração de bordas/texturas básicas |
-| `relu1` | `nn.ReLU` | - | $1\times26\times26$ | Introdução de não-linearidade (zera valores negativos) |
-| `maxp1` | `nn.MaxPool2d` | `kernel_size=2` | $1\times13\times13$ | Redução da dimensionalidade e invariância de translação |
-| `flatten` | `nn.Flatten` | - | $1\times169$ | Converte o feature map 2D em vetor 1D (Flattened Size = $13\times13=169$) |
-| `fc1` | `nn.Linear` | `in=169`, `out=10` | $1\times10$ | Camada oculta de classificação |
+| `conv1` | `nn.Conv2d` | `kernel_size=5` | $1\times24\times24$ | Extração de bordas/texturas básicas |
+| `relu1` | `nn.ReLU` | - | $1\times24\times24$ | Introdução de não-linearidade (zera valores negativos) |
+| `maxp1` | `nn.MaxPool2d` | `kernel_size=2` | $1\times12\times12$ | Redução da dimensionalidade e invariância de translação |
+| `flatten` | `nn.Flatten` | - | $1\times144$ | Converte o feature map 2D em vetor 1D (Flattened Size = $12\times12=144$) |
+| `fc1` | `nn.Linear` | `in=144`, `out=10` | $1\times10$ | Camada oculta de classificação |
 | `relu2` | `nn.ReLU` | - | $1\times10$ | Ativação da camada oculta |
 | `fc2` | `nn.Linear` | `in=10`, `out=10` | $1\times10$ | Camada de saída (logits para as 10 classes) |
 
