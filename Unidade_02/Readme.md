@@ -71,8 +71,10 @@ O modelo foi treinado por 30 épocas, alcançando uma acurácia de validação d
 
 > **Análise da Convergência:**
 > As curvas de perda de treino e validação diminuíram rapidamente nas primeiras 5 épocas, convergindo para um platô em torno de 0.5. A perda de validação acompanhou de perto a perda de treino, indicando que o modelo generalizou bem e não apresentou *overfitting* significativo. A baixa complexidade do modelo (poucos filtros) pode ter limitado a acurácia máxima, mas garantiu uma convergência estável.
+> 
+
 ![](img/loss.png)]
-> ![](img/accuracy.png)]
+![](img/accuracy.png)]
 
 
 ### 2. Análise dos Feature Maps
@@ -80,7 +82,8 @@ O modelo foi treinado por 30 épocas, alcançando uma acurácia de validação d
 
 > **Interpretação Visual:**
 > O **Filtro #0 da camada `conv1`** parece ter aprendido a detectar bordas verticais ou padrões angulares (como é comum em filtros de baixo nível). O **Feature Map após `conv1`** mostra essas bordas ativadas. Após a **`relu1`**, todos os valores negativos foram zerados, resultando em ativações mais esparsas e um mapa mais escuro. Finalmente, a camada **`maxp1`** reduziu o tamanho do *feature map* (de $24\times24$ para $12\times12$), preservando as ativações mais fortes, o que é visível pela semelhança do padrão no mapa reduzido.
-> ![](img/features_maps.png)]
+
+![](img/features_maps.png)]
 
 
 ---
@@ -89,6 +92,6 @@ O modelo foi treinado por 30 épocas, alcançando uma acurácia de validação d
 
 O vídeo a seguir demonstra o processo de desenvolvimento e detalha a análise visual das ativações da rede:
 
-[https://youtu.be/1A-jYQ8Nq3U]
+[Vídeo]([https://youtu.be/1A-jYQ8Nq3U)
 
 `
