@@ -66,7 +66,7 @@ Isto permitiu:
 
 ### 1. Curvas de Perda (Loss)
 
-O modelo foi treinado por 10 épocas, alcançando uma acurácia de validação de aproximadamente **84.32%**.
+O modelo foi treinado por 30 épocas, alcançando uma acurácia de validação de aproximadamente **84.32%**.
 
 
 
@@ -76,9 +76,8 @@ O modelo foi treinado por 10 épocas, alcançando uma acurácia de validação d
 ### 2. Análise dos Feature Maps
 
 
-
 > **Interpretação Visual:**
-> O **Filtro #0 da camada `conv1`** parece ter aprendido a detectar bordas verticais ou padrões angulares (como é comum em filtros de baixo nível). O **Feature Map após `conv1`** mostra essas bordas ativadas. Após a **`relu1`**, todos os valores negativos foram zerados, resultando em ativações mais esparsas e um mapa mais escuro. Finalmente, a camada **`maxp1`** reduziu o tamanho do *feature map* (de $26\times26$ para $13\times13$), preservando as ativações mais fortes (brilhantes), o que é visível pela semelhança do padrão no mapa reduzido.
+> O **Filtro #0 da camada `conv1`** parece ter aprendido a detectar bordas verticais ou padrões angulares (como é comum em filtros de baixo nível). O **Feature Map após `conv1`** mostra essas bordas ativadas. Após a **`relu1`**, todos os valores negativos foram zerados, resultando em ativações mais esparsas e um mapa mais escuro. Finalmente, a camada **`maxp1`** reduziu o tamanho do *feature map* (de $24\times24$ para $12\times12$), preservando as ativações mais fortes, o que é visível pela semelhança do padrão no mapa reduzido.
 
 ---
 
@@ -86,6 +85,6 @@ O modelo foi treinado por 10 épocas, alcançando uma acurácia de validação d
 
 O vídeo a seguir demonstra o processo de desenvolvimento e detalha a análise visual das ativações da rede:
 
-[Link do Vídeo]
+[https://youtu.be/1A-jYQ8Nq3U]
 
 `
