@@ -26,3 +26,11 @@ O projeto tem como objetivo:
 * Implementar e comparar diferentes **Learning Rate Schedulers** ($\text{StepLR}$ e $\text{LambdaLR}$) e analisar seu impacto em treinamentos curtos.
 
 ---
+### 📦 Estrutura do Repositório
+
+├── CNN_MNIST_Moda_U3.ipynb # Notebook Principal contendo TODOS os experimentos:
+│                               # - EWMA, Bias Correction, e Visualização Adam.
+│                               # - Comparação de SGD, Momentum e Nesterov.
+│                               # - Implementação e análise de LR Schedulers.
+├── img/                    # contém todas as imagens geradas 
+
