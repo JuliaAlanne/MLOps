@@ -14,7 +14,7 @@ Este trabalho foi desenvolvido como projeto final da disciplina de **PROJETO DE 
 
 Você pode conferir a análise detalhada, resultados e conclusões na nota técnica publicada:
 
-> **🔗 Link para o Artigo no Medium/Substack:**
+> **🔗 Link para o Artigo no Medium:**
 > [`Otimização Avançada em Deep Learning com PyTorch`](https://medium.com/@juliaalanne/otimiza%C3%A7%C3%A3o-avan%C3%A7ada-em-deep-learning-com-pytorch-uma-an%C3%A1lisem-aplicada-ao-fashion-mnist-8a0a7aa1095f?postPublishedType=repub)
 
 ### 🎯 Objetivos Técnicos
